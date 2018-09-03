@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Raleway:300,400,700');
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333333;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollbar-toggle {
+  overflow: hidden;
+}
+
+.section-block {
+  margin: 0;
+  padding: 4.5rem 3.5rem;
+}
+
+.section-block:nth-child(even) {
+  background-color: #F5F5F5;
+}
+.section-block:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+/* section styles */
+
+h1.section-title {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 700;
+}
+
+h1.section-title::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 4px 0 10px;
+  background-color: #FBF13F;
+}
