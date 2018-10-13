@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "_styles-global-imports";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: $body-font-size;
+  color: $text-color;
+}
+
+h1 {
+  font-size: $heading-font-size-one;
+  color: $heading-color-one;
+}
+
+h2 {
+  font-size: $heading-font-size-two;
+  color: $heading-color-two;
+}
+
+h3 {
+  font-size: $heading-font-size-three;
+  color: $heading-color-three;
+}
+
+h4 {
+  font-size: $heading-font-size-four;
+  color: $heading-color-four;
+}
+
+h5 {
+  font-size: $heading-font-size-five;
+  color: $heading-color-five;
+}
+
+h5 {
+  font-size: $heading-font-size-six ;
+  color: $heading-color-six;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/*** @COMPONENT - LANDING-PAGE-CONTENT ***/
+
+h3.section-title {
+  font-family: $secondary-font;
+  font-size: 2.25em;
+  font-weight: $font-weight-bold;
+  margin-bottom: 1rem;
+
+  &:after {
+    @include pseudo($pos: relative);
+    width: 50px;
+    height: 3px;
+    margin: 4px 0 10px;
+    background-color: $mint;
+  }
+
+}
+
+.section-title-intro {
+  font-size: 1.15em;
+}
+
+/*** MEDIA QUERY - $breakpoint-laptop ***/
+@media only screen and (min-width: $breakpoint-laptop) {
+
+  h3.section-title {
+    font-size: $heading-font-size-three;
+  }
+
+}

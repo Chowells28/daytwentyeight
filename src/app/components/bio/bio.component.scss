@@ -1,0 +1,14 @@
+// Global import of brand styles
+@import "styles/_styles-global-imports";
+
+a.section-title-intro-link {
+  display: inline-block;
+  color: $black;
+  font-weight: $font-weight-bold;
+  transition: 0.3s;
+
+  &:hover {
+    color: $mint;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,18 @@
+// Global import of brand styles
+@import "styles/_styles-global-imports";
+
+a.section-title-link {
+  color: inherit;
+  transition: 0.3s;
+
+  &:hover {
+    color: $mint;
+    text-decoration: none;
+  }
+
+}
+
+.section-title-icon-link {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
