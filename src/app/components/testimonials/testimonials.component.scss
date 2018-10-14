@@ -1,5 +1,6 @@
 // Global import of brand styles
-@import "styles/_styles-global-imports";
+//@import '~/styles/styles-global-imports';
+@import "~src/sass/_styles-global-imports.scss";
 
 .testimonials-carousel-wrapper {
   position: relative;
