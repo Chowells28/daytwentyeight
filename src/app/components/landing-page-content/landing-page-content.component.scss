@@ -1,0 +1,38 @@
+// Global import of brand styles
+@import "~src/sass/_styles-global-imports";
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.scrollbar-toggle {
+  overflow: hidden;
+}
+
+.section-block {
+  margin: 0;
+  padding: 2rem;
+}
+
+.section-block:nth-child(even) {
+  background-color: $section-block-even;
+}
+
+.section-block:nth-child(odd) {
+  background-color: $section-block-odd;
+}
+
+.section-block-footer {
+  background-color: $section-block-footer;
+}
+
+/*** MEDIA QUERY - $breakpoint-laptop ***/
+@media only screen and (min-width: $breakpoint-laptop) {
+
+  .section-block {
+    margin: 0;
+    padding: 6rem;
+  }
+
+}

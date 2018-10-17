@@ -1,3 +1,7 @@
+// Global import of brand styles
+//@import '~/styles/styles-global-imports';
+@import "~src/sass/_styles-global-imports.scss";
+
 .testimonials-carousel-wrapper {
   position: relative;
 }
@@ -5,8 +9,14 @@
 .testimonials-carousel-controls-prev,
 .testimonials-carousel-controls-next {
   display: inline-block;
-  margin: 0 0.75rem 0 0;
+  margin: 0 1.25rem 0 0;
   padding: 0;
-  font-size: 2rem;
-  color: #FBF13F;
+  font-size: 3rem;
+  color: $mint;
+}
+
+.testimonials-carousel-controls-prev i.fas.fa-arrow-left,
+.testimonials-carousel-controls-next i.fas.fa-arrow-right {
+  padding-bottom: 4px;
+  border-bottom: 3px solid $mint;
 }

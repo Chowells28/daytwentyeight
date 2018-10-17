@@ -1,3 +1,6 @@
+// Global import of brand styles
+@import "~src/sass/_styles-global-imports";
+
 .carousel-caption {
   position: relative;
   right: 0;
@@ -18,10 +21,15 @@
 }
 
 .testimonial-carousel-item-sub-header {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #FF007B;
-  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+  color: $mint;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
+
+.testimonial-carousel-item-body {
+  font-style: italic;
 }
 
 .testimonial-carousel-item-footer {
@@ -29,24 +37,29 @@
   color: #D1CECE;
 }
 
-@media (min-width: 1200px) {
+/*** MEDIA QUERY - $breakpoint-desktop-sm ***/
+@media only screen and (min-width: $breakpoint-desktop-sm) {
   .testimonial-carousel-item-wrapper {
     display: flex;
     flex-direction: column;
     height: 240px;
   }
+
   .testimonial-carousel-item-structure {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+
   .testimonial-carousel-item-header,
   .testimonial-carousel-item-footer {
     flex: 1;
   }
+
   .testimonial-carousel-item-body {
     flex: 2;
   }
+
   .testimonial-carousel-item-sub-header,
   .testimonial-carousel-item-sub-footer {
     padding-left: 5px;

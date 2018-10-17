@@ -1,3 +1,6 @@
+  // Global import of brand styles
+  @import "~src/sass/_styles-global-imports";
+
   .lp-bg {
     background-image: url('../../../assets/emile-perron-190221-unsplash.jpg');
     height: 100%;
@@ -18,8 +21,8 @@
   .intro-content {
     display: flex;
     flex-direction: column;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
+    font-family: $secondary-font;
+    font-weight: $font-weight-bold;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 0;
     padding: 1.5rem;
@@ -29,15 +32,15 @@
   .intro-item {
     font-size: 2rem;
     font-size: 5vh;
-    color: #FFFFFF;
+    color: $white;
   }
 
   .sub-item {
-    color: #FBF13F;
+    color: $yellow;
   }
 
   .intro-item-bracket {
-    color: #FF007B;
+    color: $pink;
   }
 
   @media (min-width: 992px) {
@@ -45,10 +48,12 @@
       align-items: flex-start;
       justify-content: left;
     }
+
     .intro-content {
       margin: 10% 0 0 8%;
       padding: 3.5rem;
     }
+
     .intro-item {
       font-size: 4rem;
       font-size: 6.5vh;

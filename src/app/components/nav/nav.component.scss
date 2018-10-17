@@ -1,17 +1,20 @@
+// Global import of brand styles
+@import "~src/sass/_styles-global-imports";
+
 .navbar {
     position: fixed;
     z-index: 1;
     width: 100%;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #333333;
+    background-color: $white;
+    border-bottom: 1px solid $text-color;
     a {
-        color: #333333;
+        color: $text-color;
     }
 }
 
 .navbar-brand {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     margin: 0;
 }
 
@@ -24,7 +27,7 @@
 .bar-1, .bar-2, .bar-3 {
     width: 35px;
     height: 0.25rem;
-    background-color: #333333;
+    background-color: $text-color;
     margin: 0.25rem 0;
     transition: 0.4s;
 }

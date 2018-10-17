@@ -14,6 +14,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LandingPageContentComponent } from './components/landing-page-content/landing-page-content.component';
 import { NavOverlayComponent } from './components/nav-overlay/nav-overlay.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     PortfolioComponent,
     LandingPageContentComponent,
     NavOverlayComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
