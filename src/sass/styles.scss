@@ -70,11 +70,48 @@ h3.section-title {
   font-size: 1.15em;
 }
 
+a.section-title-link {
+  color: inherit;
+  transition: 0.3s;
+
+  &:hover {
+    color: $mint;
+    text-decoration: none;
+  }
+
+}
+
+.section-title-icon-link {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
 /*** MEDIA QUERY - $breakpoint-laptop ***/
 @media only screen and (min-width: $breakpoint-laptop) {
 
   h3.section-title {
     font-size: $heading-font-size-three;
+  }
+
+  .section-title-icon-link {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*** @COMPONENT - **-EXTENDED ***/
+
+.wrapper-extended {
+  margin: 0;
+  padding: 6rem 2rem;
+}
+
+/*** MEDIA QUERY - $breakpoint-laptop ***/
+@media only screen and (min-width: $breakpoint-laptop) {
+
+  .wrapper-extended {
+    margin: 0;
+    padding: 6rem;
   }
 
 }
