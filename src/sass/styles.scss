@@ -40,7 +40,7 @@ h5 {
 }
 
 h5 {
-  font-size: $heading-font-size-six ;
+  font-size: $heading-font-size-six;
   color: $heading-color-six;
 }
 
@@ -56,34 +56,37 @@ h3.section-title {
   font-weight: $font-weight-bold;
   margin-bottom: 1rem;
 
-  &:after {
-    @include pseudo($pos: relative);
-    width: 50px;
-    height: 3px;
-    margin: 4px 0 10px;
-    background-color: $mint;
-  }
+  // &:after {
+  //   @include pseudo($pos: relative);
+  //   width: 60px;
+  //   height: 3px;
+  //   margin: 6px auto 10px;
+  //   background-color: $logo-peach;
+  // }
 
 }
 
 .section-title-intro {
   font-size: 1.15em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 a.section-title-link {
   color: inherit;
-  transition: 0.3s;
+  transition: 0.5s;
 
   &:hover {
-    color: $mint;
+    color: $logo-peach;
     text-decoration: none;
   }
 
 }
 
 .section-title-icon-link {
+  display: block;
   font-size: 1rem;
-  vertical-align: middle;
 }
 
 /*** MEDIA QUERY - $breakpoint-laptop ***/
@@ -102,8 +105,16 @@ a.section-title-link {
 /*** @COMPONENT - **-EXTENDED ***/
 
 .wrapper-extended {
+  display: flex;
+  flex-flow: column;
+  height: auto;
   margin: 0;
-  padding: 6rem 2rem;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.section-return-link {
+  margin: 1rem 0;
 }
 
 /*** MEDIA QUERY - $breakpoint-laptop ***/
@@ -111,7 +122,7 @@ a.section-title-link {
 
   .wrapper-extended {
     margin: 0;
-    padding: 6rem;
+    padding: 10rem 6rem;
   }
 
 }

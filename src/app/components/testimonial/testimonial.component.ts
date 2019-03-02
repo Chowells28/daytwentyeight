@@ -14,7 +14,7 @@ export class TestimonialComponent implements OnInit {
 
   ngOnInit() {
     this.brillianceData = this.brillianceService.getBrillianceData();
-    console.log('from the Testimonial component', this.brillianceData);
+    // console.log('from the Testimonial component', this.brillianceData);
   }
 
 }

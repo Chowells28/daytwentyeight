@@ -1,2 +1,51 @@
 // Global import of brand styles
 @import "~src/sass/_styles-global-imports";
+
+.testimonials-values-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 2% 0;
+  padding: 0;
+}
+
+.testimonials-value-item {
+  font-family: $secondary-font;
+  font-size: 2em;
+  font-weight: $font-weight-bold;
+  border: 1px solid #ccc;
+  margin: 2% 0;
+  width: 100%;
+}
+
+.testimonial-value-icon-link {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+a.testimonials-value-item-link {
+  display: block;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+
+/*** MEDIA QUERY - $breakpoint-tablet ***/
+@media only screen and (min-width: $breakpoint-tablet) {
+
+  .testimonials-value-item {
+    margin: 1%;
+    width: 48%;
+  }
+
+}
+
+/*** MEDIA QUERY - $breakpoint-desktop-medium ***/
+@media only screen and (min-width: $breakpoint-desktop-md) {
+
+  .testimonials-value-item {
+    width: 23%;
+  }
+
+}

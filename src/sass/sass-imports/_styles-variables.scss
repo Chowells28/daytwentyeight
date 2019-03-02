@@ -1,5 +1,5 @@
 // // Brand Color Variables
-$black: #000000;
+$logo-purple: #000000;
 $charcoal: #333333;
 $white: #FFFFFF;
 $mint: #27EEC7;
@@ -7,21 +7,23 @@ $yellow: #FBF13F;
 $pink: #FF007B;
 $light-grey: #F1F1F1;
 $grey: #A3A3A3;
+$logo-purple: #625772;
+$logo-peach: #F38181;
 
 // Global Styles
 $text-color: $charcoal;
 
 // Headings Color Variables
-$heading-color-one: $black;
-$heading-color-two: $black;
-$heading-color-three: $black;
-$heading-color-four: $black;
-$heading-color-five: $black;
-$heading-color-six: $black;
+$heading-color-one: $logo-purple;
+$heading-color-two: $logo-purple;
+$heading-color-three: $logo-purple;
+$heading-color-four: $logo-purple;
+$heading-color-five: $logo-purple;
+$heading-color-six: $logo-purple;
 
 // Landing Page Content
 $section-block-even: $light-grey;
 $section-block-odd: $white;
 
 // Footer
-$footer-background-color: $grey;
+$footer-background-color: $logo-purple;

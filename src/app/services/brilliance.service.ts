@@ -53,7 +53,7 @@ export class BrillianceService {
     }];
    }
    getBrillianceData(): Brilliance[] {
-    console.log('from the service: ', this.brillinaceAwards);
+    // console.log('from the service: ', this.brillinaceAwards);
     return this.brillinaceAwards;
   }
 }

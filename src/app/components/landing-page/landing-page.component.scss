@@ -16,6 +16,8 @@
     justify-content: center;
     text-align: center;
     height: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .intro-content {
@@ -44,13 +46,8 @@
   }
 
   @media (min-width: 992px) {
-    .lp-intro-wrapper {
-      align-items: flex-start;
-      justify-content: left;
-    }
 
     .intro-content {
-      margin: 10% 0 0 8%;
       padding: 3.5rem;
     }
 
@@ -58,4 +55,5 @@
       font-size: 4rem;
       font-size: 6.5vh;
     }
+
   }

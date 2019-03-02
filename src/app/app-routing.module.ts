@@ -7,6 +7,8 @@ import { ClientsExtendedComponent } from './components/clients-extended/clients-
 import { PortfolioExtendedComponent } from './components/portfolio-extended/portfolio-extended.component';
 import { SkillsExtendedComponent } from './components/skills-extended/skills-extended.component';
 import { TestimonialsExtendedComponent } from './components/testimonials-extended/testimonials-extended.component';
+import { TestimonialsExtendedCustomerComponent } from './components/testimonials-extended-customer/testimonials-extended-customer.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 
@@ -16,7 +18,9 @@ const routes: Routes = [
   {path: 'clients', component: ClientsExtendedComponent},
   {path: 'portfolio', component: PortfolioExtendedComponent},
   {path: 'skills', component: SkillsExtendedComponent},
-  {path: 'testimonials', component: TestimonialsExtendedComponent}
+  {path: 'testimonials', component: TestimonialsExtendedComponent},
+  {path: 'testimonials-customer', component: TestimonialsExtendedCustomerComponent},
+  {path: '**', component: NotFoundComponent}
 ];
 
 @NgModule({

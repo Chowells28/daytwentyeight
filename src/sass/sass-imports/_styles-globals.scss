@@ -1,1 +1,7 @@
 // Global Styles
+
+a:focus,
+a:hover {
+  outline: none;
+  text-decoration: none;
+}

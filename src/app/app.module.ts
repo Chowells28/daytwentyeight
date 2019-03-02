@@ -1,3 +1,4 @@
+import { BrillianceValuesService } from './services/brilliance-values.service';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -22,6 +23,18 @@ import { BioExtendedComponent } from './components/bio-extended/bio-extended.com
 import { ClientsExtendedComponent } from './components/clients-extended/clients-extended.component';
 import { SkillsExtendedComponent } from './components/skills-extended/skills-extended.component';
 import { PortfolioExtendedComponent } from './components/portfolio-extended/portfolio-extended.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+// tslint:disable-next-line:max-line-length
+import { TestimonialsExtendedCustomerComponent } from './components/testimonials-extended-customer/testimonials-extended-customer.component';
+// tslint:disable-next-line:max-line-length
+import { TestimonialsExtendedEnergiseComponent } from './components/testimonials-extended-energise/testimonials-extended-energise.component';
+import { TestimonialsExtendedSpiritComponent } from './components/testimonials-extended-spirit/testimonials-extended-spirit.component';
+// tslint:disable-next-line:max-line-length
+import { TestimonialsExtendedTeamworkComponent } from './components/testimonials-extended-teamwork/testimonials-extended-teamwork.component';
+import { TestimonialsValueComponent } from './components/testimonials-value/testimonials-value.component';
+import { HttpClientModule } from '@angular/common/http';
+import { NavExtendedComponent } from './components/nav-extended/nav-extended.component';
+import { NavOverlayExtendedComponent } from './components/nav-overlay-extended/nav-overlay-extended.component';
 
 
 @NgModule({
@@ -44,13 +57,22 @@ import { PortfolioExtendedComponent } from './components/portfolio-extended/port
     ClientsExtendedComponent,
     SkillsExtendedComponent,
     PortfolioExtendedComponent,
+    NotFoundComponent,
+    TestimonialsExtendedCustomerComponent,
+    TestimonialsExtendedEnergiseComponent,
+    TestimonialsExtendedSpiritComponent,
+    TestimonialsExtendedTeamworkComponent,
+    TestimonialsValueComponent,
+    NavExtendedComponent,
+    NavOverlayExtendedComponent,
   ],
   imports: [
     BrowserModule,
     ScrollToModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [BrillianceValuesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
